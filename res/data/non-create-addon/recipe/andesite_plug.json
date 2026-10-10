@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "andesite_plug",
+  "ingredients": [
+    "minecraft:diamond",
+    "create:andesite_alloy"
+  ],
+  "result": {
+    "id": "non-create-addon:andesite_plug",
+    "count": 1
+  }
+}

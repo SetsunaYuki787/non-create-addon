@@ -6,6 +6,7 @@ import com.nonid.entity.HorseLiquidCollectorEntity;
 import com.nonid.internal.animation.server.ServerAnimationController;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -53,6 +54,11 @@ import java.util.concurrent.ConcurrentHashMap;
  * <p>Feature 4 hands that same effect out for armor: {@link CardboardArmorSpeed} gives one
  * animation speed level per worn piece of Create's cardboard set, so a player can carry level
  * 1..3 by dressing instead of by drinking or by a command.
+ *
+ * <p>Feature 5 is the andesite plug: {@link AndesitePlug} registers the wearable and {@link
+ * PlugGoggles} teaches Trinkets about it and makes wearing it count as wearing Create's engineer
+ * goggles. Trinkets is optional - the item exists and crafts without it, only the goggles hook
+ * needs it.
  */
 public final class NoNAddon implements ModInitializer {
     public static final String MOD_ID = "non-create-addon";
@@ -112,6 +118,14 @@ public final class NoNAddon implements ModInitializer {
         NonAnimationEvents.STARTED.register(NoNAddon::onAnimationStarted);
         NonAnimationEvents.STAGE_CHANGED.register(NoNAddon::onAnimationStageChanged);
         CardboardArmorSpeed.register();
+        AndesitePlug.register();
+        if (FabricLoader.getInstance().isModLoaded("trinkets")) {
+            try {
+                PlugGoggles.register();
+            } catch (Throwable ignored) {
+                // Trinkets present but unusable: the plug stays a craftable item without a slot.
+            }
+        }
     }
 
     private static void onAnimationStopped(NonAnimationEvents.StoppedContext context) {

@@ -3,7 +3,7 @@
   "id": "non-create-addon",
   "version": "1.0.0",
   "name": "Non Create Addon",
-  "description": "A companion addon for NeedsofNature and Create. Adds an andesite alloy recipe (2 iron ingots + 2 liquid bottles -> 9 andesite alloy), a rose quartz recipe (1 liquid bottle + 8 redstone -> 9 rose quartz) and a brass recipe (1 copper ingot + 200 mB of liquid in a heated mixer -> 2 brass ingots), disabling the original Create recipes for all three. Makes the horse liquid collector emit a redstone pulse in a 3x3 area once its animation has finished, so the collector can be automated, and lets a dry-handed player take the liquid bottle out of a full collector. Recolours drained liquid bottles so every liquid matches that one recipe, and adds the non-create-addon:animation_speed status effect: at level 1 / 2 / 3 a NoN animation plays 1.5x / 2x / 2.5x faster and lasts correspondingly less. Wearing Create's cardboard armor grants one level per piece.",
+  "description": "A companion addon for NeedsofNature and Create. Adds an andesite alloy recipe (2 iron ingots + 2 liquid bottles -> 9 andesite alloy), a rose quartz recipe (1 liquid bottle + 8 redstone -> 9 rose quartz) and a brass recipe (1 copper ingot + 200 mB of liquid in a heated mixer -> 2 brass ingots), disabling the original Create recipes for all three. Makes the horse liquid collector emit a redstone pulse in a 3x3 area once its animation has finished, so the collector can be automated, and lets a dry-handed player take the liquid bottle out of a full collector. Recolours drained liquid bottles so every liquid matches that one recipe, and adds the non-create-addon:animation_speed status effect: at level 1 / 2 / 3 a NoN animation plays 1.5x / 2x / 2.5x faster and lasts correspondingly less. Wearing Create's cardboard armor grants one level per piece. Adds the andesite plug: a trinket for the legs slots that is worn like NoN's own accessories and counts as Create's engineer goggles while equipped.",
   "authors": [
     "SetsunaYuki787"
   ],
@@ -31,5 +31,8 @@
     "fabric-api": "*",
     "needsofnature": ">=1.5.2",
     "create": "*"
+  },
+  "recommends": {
+    "trinkets": "*"
   }
 }

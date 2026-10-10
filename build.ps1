@@ -44,6 +44,9 @@ $cpJars = @(
   "$named\needsofnature-named.jar",
   "$named\fabric-api-base-named.jar",
   "$named\fabric-lifecycle-events-v1-named.jar",
+  "$named\trinkets-named.jar",
+  "$named\cardinal-components-base-named.jar",
+  "$named\cardinal-components-entity-named.jar",
   "$named\geckolib-named.jar",
   "$named\create-named.jar",
   $loader
