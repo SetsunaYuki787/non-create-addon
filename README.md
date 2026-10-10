@@ -9,6 +9,24 @@ placeholder block, and it does nothing useful unless both of those mods are inst
 
 ---
 
+## 中文简介
+
+这是 **Minecraft 1.21.11（Fabric）** 的附属模组，给 [NeedsofNature](https://www.curseforge.com/minecraft/mc-mods/needsofnature)
+和 [Create（ZurrTum 的 Create Fly 移植版）](https://github.com/ZurrTum/Create-Fly) 补上几项内容：
+
+1. **安山合金**：`2 铁锭 + 2 精液瓶` → `9 安山合金`（Create 原有配方一并禁用）
+2. **玫瑰石英**：`1 精液瓶 + 8 红石` → `9 玫瑰石英`（原配方禁用）
+3. **黄铜锭**：`1 铜锭 + 200 mB 精液` → `2 黄铜锭`，需要加热的 Create 搅拌器（原配方禁用）；
+   任意生物的精液瓶都可使用——倒进分液器后统一取兜底色，因此仍然拒绝原版药水
+4. **种马取精器**：动画结束后向周围 **3×3** 区域输出一次红石脉冲，可用 Create 部署器自动化
+5. **`nonaddon:animation_speed`**：1/2/3 级让 NoN 动画以 **1.5× / 2× / 2.5×** 播放，**总时长同步缩短**；
+   穿 Create 的**纸板盔甲**每件给一层（上限 3 级），脱掉即消失
+
+依赖：Minecraft 1.21.11、Fabric Loader 0.19.5、Fabric API 0.141.6+1.21.11、NeedsofNature 1.5.2+1.21.11、
+Create 6.0.9-5、GeckoLib 5.4.5。把 `nonaddon-1.0.0.jar` 放进 `mods/` 即可。
+
+---
+
 ## Features
 
 ### 1. Andesite alloy from liquid bottles
