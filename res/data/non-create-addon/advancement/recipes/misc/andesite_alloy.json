@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nonaddon:andesite_alloy"
+        "recipe": "non-create-addon:andesite_alloy"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "nonaddon:andesite_alloy"
+      "non-create-addon:andesite_alloy"
     ]
   }
 }

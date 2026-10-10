@@ -7,7 +7,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
  * The player "state" that speeds up NoN animations.
  *
  * <p>The amplifier is the boost level, so
- * {@code /effect give <player> nonaddon:animation_speed <seconds> <0|1|2>} gives level 1 / 2 / 3,
+ * {@code /effect give <player> non-create-addon:animation_speed <seconds> <0|1|2>} gives level 1 / 2 / 3,
  * i.e. 1.5x / 2x / 2.5x playback. Higher amplifiers are capped at level 3
  * (see {@link NoNAddon#speedMultiplierForLevel(int)}), which is why the effect never needs to be
  * granted with an amplifier above 2.

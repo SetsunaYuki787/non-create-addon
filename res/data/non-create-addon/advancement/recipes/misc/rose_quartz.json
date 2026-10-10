@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "nonaddon:rose_quartz"
+        "recipe": "non-create-addon:rose_quartz"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "nonaddon:rose_quartz"
+      "non-create-addon:rose_quartz"
     ]
   }
 }

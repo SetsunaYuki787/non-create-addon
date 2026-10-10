@@ -66,7 +66,7 @@ Get-ChildItem -Recurse -Filter *.class $classes | ForEach-Object { Write-Host " 
 
 # ---- 2. pack classes ----
 Write-Host "=== [2] pack raw jar ==="
-$raw = "$build\nonaddon-raw.jar"
+$raw = "$build\non-create-addon-raw.jar"
 if (Test-Path $raw) { Remove-Item -Force $raw }
 Push-Location $classes
 & $jarc --create --file $raw .
@@ -75,13 +75,13 @@ if ($LASTEXITCODE -ne 0) { Write-Host "JAR FAILED"; exit 1 }
 
 # ---- 3. remap named -> intermediary ----
 Write-Host "=== [3] remap named -> intermediary ==="
-$mid = "$build\nonaddon-intermediary.jar"
+$mid = "$build\non-create-addon-intermediary.jar"
 & $java -Xmx1G -cp $trcp TRRun $raw $mid "$t\mappings.tiny" named intermediary $remapCp.Split(';')
 if ($LASTEXITCODE -ne 0) { Write-Host "REMAP FAILED"; exit 1 }
 
 # ---- 4. add resources ----
 Write-Host "=== [4] add resources ==="
-$final = "$build\nonaddon-1.0.0.jar"
+$final = "$build\non-create-addon-1.0.0.jar"
 Copy-Item $mid $final -Force
 & $jarc --update --file $final -C "$addon\res" .
 if ($LASTEXITCODE -ne 0) { Write-Host "RESOURCE PACK FAILED"; exit 1 }

@@ -33,7 +33,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
  * reaches through {@code GenericItemEmptying.emptyItem -> PotionFluidHandler.emptyPotion ->
  * getFluidFromPotionItem -> getFluidFromPotion -> getFluidStack} - makes every drained semen fluid
  * identical to the fallback-coloured one, which is exactly what
- * {@code nonaddon:brass_ingot_from_semen} describes. Vanilla potions are untouched: their component
+ * {@code non-create-addon:brass_ingot_from_semen} describes. Vanilla potions are untouched: their component
  * carries a different {@code potion} entry, so they still fail the recipe.
  *
  * <p>The injection point is at {@code RETURN}, so the fluid (including Create's bottle-type

@@ -46,6 +46,6 @@ public final class NonAddonBridge {
      * {@code com.nonaddon.mixin.PotionFluidMixin} to give every drained semen fluid one colour.
      */
     public static int fallbackLiquidColorRgb() {
-        return NonLiquidSystem.resolveBottleTintRgb(Identifier.of("nonaddon", "__no_such_entity__"));
+        return NonLiquidSystem.resolveBottleTintRgb(Identifier.of("non-create-addon", "__no_such_entity__"));
     }
 }

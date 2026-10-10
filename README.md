@@ -1,7 +1,8 @@
-# nonaddon
+# Non Create Addon
 
-An unofficial **Fabric addon for Minecraft 1.21.11** that adds a few recipes and quality-of-life
-features to [NeedsofNature](https://www.curseforge.com/minecraft/mc-mods/needsofnature) and
+A companion **Fabric addon for Minecraft 1.21.11** (mod id `non-create-addon`) that adds a few
+recipes and quality-of-life features to
+[NeedsofNature](https://www.curseforge.com/minecraft/mc-mods/needsofnature) and
 [Create (ZurrTum's Create Fly port)](https://github.com/ZurrTum/Create-Fly).
 
 It is a companion mod: it contains no textures, models or content of its own beyond a tiny
@@ -19,11 +20,11 @@ placeholder block, and it does nothing useful unless both of those mods are inst
 3. **黄铜锭**：`1 铜锭 + 200 mB 精液` → `2 黄铜锭`，需要加热的 Create 搅拌器（原配方禁用）；
    任意生物的精液瓶都可使用——倒进分液器后统一取兜底色，因此仍然拒绝原版药水
 4. **种马取精器**：动画结束后向周围 **3×3** 区域输出一次红石脉冲，可用 Create 部署器自动化
-5. **`nonaddon:animation_speed`**：1/2/3 级让 NoN 动画以 **1.5× / 2× / 2.5×** 播放，**总时长同步缩短**；
+5. **`non-create-addon:animation_speed`**：1/2/3 级让 NoN 动画以 **1.5× / 2× / 2.5×** 播放，**总时长同步缩短**；
    穿 Create 的**纸板盔甲**每件给一层（上限 3 级），脱掉即消失
 
 依赖：Minecraft 1.21.11、Fabric Loader 0.19.5、Fabric API 0.141.6+1.21.11、NeedsofNature 1.5.2+1.21.11、
-Create 6.0.9-5、GeckoLib 5.4.5。把 `nonaddon-1.0.0.jar` 放进 `mods/` 即可。
+Create 6.0.9-5、GeckoLib 5.4.5。把 `non-create-addon-1.0.0.jar` 放进 `mods/` 即可。
 
 ---
 
@@ -57,7 +58,7 @@ When the NeedsofNature **horse liquid collector** finishes its animation, it emi
 redstone pulse into the surrounding 3×3 area, so the collector can be automated with Create
 deployers, hoppers or any other redstone machinery.
 
-### 5. `nonaddon:animation_speed`
+### 5. `non-create-addon:animation_speed`
 
 A beneficial status effect (levels 1–3) that makes NeedsofNature animations play faster **and**
 finish sooner:
@@ -73,7 +74,7 @@ leggings, boots), capped at level 3 — so the fourth piece has no additional ef
 armor off removes the effect again. An effect handed out by something else is never stolen or
 shortened.
 
-The level can also be applied manually, e.g. `/effect give @s nonaddon:animation_speed 60 2`.
+The level can also be applied manually, e.g. `/effect give @s non-create-addon:animation_speed 60 2`.
 
 ## Requirements
 
@@ -88,7 +89,7 @@ The level can also be applied manually, e.g. `/effect give @s nonaddon:animation
 
 ## Install
 
-Drop `nonaddon-1.0.0.jar` into your `mods/` folder. Client and server.
+Drop `non-create-addon-1.0.0.jar` into your `mods/` folder. Client and server.
 
 ## Repository layout
 
@@ -115,7 +116,10 @@ development use Fabric Loom instead and treat `res/` + `src/` as the actual proj
 
 * Unofficial and unaffiliated with either project. NeedsofNature and Create are the work of their
   own authors and are **not** included here.
-* `res/data/create/recipe/nonaddon_condition_probe.json` is a small diagnostic recipe that
+* `res/data/create/recipe/non-create-addon_condition_probe.json` is a small diagnostic recipe that
   verifies the "override a recipe from another mod" mechanism still works; if it ever fails to
   load, the disabled recipes above have stopped working too.
-* No license file yet — ask before reusing the code.
+* A companion mod: it registers an invisible pulse block but ships no other content of its own, and
+  it does nothing useful unless both NeedsofNature and Create are installed.
+* Licensed under the MIT License — see [LICENSE](LICENSE).
+

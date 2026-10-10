@@ -31,7 +31,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * NoN Addon.
  *
- * <p>Feature 1 is data driven: {@code data/nonaddon/recipe/andesite_alloy.json} turns
+ * <p>Feature 1 is data driven: {@code data/non-create-addon/recipe/andesite_alloy.json} turns
  * 2 iron ingots + 2 liquid bottles into 9 andesite alloy.
  *
  * <p>Feature 2 lives here: NoN publishes {@link NonAnimationEvents#STOPPED} once an animation
@@ -55,7 +55,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 1..3 by dressing instead of by drinking or by a command.
  */
 public final class NoNAddon implements ModInitializer {
-    public static final String MOD_ID = "nonaddon";
+    public static final String MOD_ID = "non-create-addon";
 
     /** Length of the emitted redstone pulse, in game ticks. */
     public static final int PULSE_TICKS = 2;
