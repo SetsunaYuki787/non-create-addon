@@ -127,6 +127,8 @@ src/com/nonaddon/            mod code (initializer, effect, cardboard armor, plu
 src/com/nonaddon/mixin/      mixins (drain colour, animation duration, collector interaction)
 src/com/nonid/               small bridge into NeedsofNature's animation events
 res/                         fabric.mod.json, mixins config, assets, data packs
+res/assets/*/items/          client item model definitions (1.21.4+ needs one per item, or the icon renders as the missing texture)
+res/assets/*/models/         the models those definitions point at, with the textures beside them
 res/data/create/recipe/      the original Create recipes, disabled via a false load condition
 build.ps1                    build script used during development
 ```
