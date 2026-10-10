@@ -5,6 +5,10 @@ recipes and quality-of-life features to
 [NeedsofNature](https://www.curseforge.com/minecraft/mc-mods/needsofnature) and
 [Create (ZurrTum's Create Fly port)](https://github.com/ZurrTum/Create-Fly).
 
+**Download:** grab the compiled mod from the
+[Releases](https://github.com/SetsunaYuki787/non-create-addon/releases) page and drop it into
+`mods/`.
+
 It is a companion mod: it contains no textures, models or content of its own beyond a tiny
 placeholder block, and it does nothing useful unless both of those mods are installed.
 
@@ -24,7 +28,8 @@ placeholder block, and it does nothing useful unless both of those mods are inst
    穿 Create 的**纸板盔甲**每件给一层（上限 3 级），脱掉即消失
 
 依赖：Minecraft 1.21.11、Fabric Loader 0.19.5、Fabric API 0.141.6+1.21.11、NeedsofNature 1.5.2+1.21.11、
-Create 6.0.9-5、GeckoLib 5.4.5。把 `non-create-addon-1.0.0.jar` 放进 `mods/` 即可。
+Create 6.0.9-5、GeckoLib 5.4.5。从 [Releases](https://github.com/SetsunaYuki787/non-create-addon/releases)
+下载 `non-create-addon-1.0.0.jar` 放进 `mods/` 即可。
 
 ---
 
