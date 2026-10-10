@@ -28,7 +28,7 @@ of its own, and it does nothing useful unless both of those mods are installed.
    穿 Create 的**纸板盔甲**每件给一层（上限 3 级），脱掉即消失
 6. **安山合金塞子**：`1 钻石 + 1 安山合金` 合成，放进 Trinkets 的**肛门/阴道**槽位（`legs/a`、`legs/v`），
    戴上后等同于 Create 的**工程师护目镜**（贴图沿用 NoN 铁塞子的形状，头部改为安山合金配色）；
-   创造模式物品栏里在**「Non Create Addon」标签页**中
+   创造模式物品栏里在**「生命源动力」标签页**中（英文界面下显示为 `Non Create Addon`）
 
 依赖：Minecraft 1.21.11、Fabric Loader 0.19.5、Fabric API 0.141.6+1.21.11、NeedsofNature 1.5.2+1.21.11、
 Create 6.0.9-5、GeckoLib 5.4.5；**塞子需要 [Trinkets](https://modrinth.com/mod/trinkets) 3.11.3**（没有它也照常合成，只是戴不上）。
@@ -101,8 +101,8 @@ alloy's colours, matching the recipe.
 Wearing it needs [Trinkets](https://modrinth.com/mod/trinkets); without that mod the plug is still
 craftable, it just has no slot to go into.
 
-The plug is listed in the addon's own creative tab (also called `Non Create Addon`), so it can be
-found in the creative inventory and in creative search.
+The plug is listed in the addon's own creative tab (`Non Create Addon`, shown as 生命源动力 in
+Chinese), so it can be found in the creative inventory and in creative search.
 
 ## Requirements
 
