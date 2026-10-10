@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nonaddon:block/redstone_pulse"
+    }
+  }
+}

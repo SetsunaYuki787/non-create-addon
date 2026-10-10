@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "andesite_alloy",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    {
+      "fabric:type": "needsofnature:liquid_bottle"
+    },
+    {
+      "fabric:type": "needsofnature:liquid_bottle"
+    }
+  ],
+  "result": {
+    "id": "create:andesite_alloy",
+    "count": 9
+  }
+}

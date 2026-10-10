@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    "minecraft:copper_ingot"
+  ],
+  "fluid_ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 16200,
+      "fluid": "create:potion",
+      "components": {
+        "create:potion_fluid_bottle_type": "regular",
+        "minecraft:potion_contents": {
+          "potion": "needsofnature:liquid",
+          "custom_color": 16776427
+        }
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "create:brass_ingot",
+      "count": 2
+    }
+  ]
+}

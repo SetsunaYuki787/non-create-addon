@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "fabric:true"
+      }
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": ["minecraft:andesite", "#c:nuggets/zinc"],
+  "results": [
+    {
+      "id": "create:andesite_alloy"
+    }
+  ]
+}

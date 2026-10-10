@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nonaddon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AnimationStageTimingMixin",
+    "PlayerInteractMixin",
+    "PotionFluidMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

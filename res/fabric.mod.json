@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "nonaddon",
+  "version": "1.0.0",
+  "name": "NoN Addon",
+  "description": "Adds an andesite alloy recipe (2 iron ingots + 2 liquid bottles -> 9 andesite alloy), makes the horse liquid collector emit a redstone pulse in a 3x3 area once its animation has finished, and lets automation (Create's Deployer) take the liquid bottle out of a full collector. It also adds the nonaddon:animation_speed status effect: while a player taking part in a NoN animation has it, that animation plays 1.5x / 2x / 2.5x faster at level 1 / 2 / 3.",
+  "authors": [
+    "nonaddon"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nonaddon.NoNAddon"
+    ]
+  },
+  "mixins": [
+    "nonaddon.mixins.json"
+  ],
+  "custom": {
+    "fabric:resource_load_order": {
+      "after": [
+        "create"
+      ]
+    }
+  },
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "needsofnature": ">=1.5.2",
+    "create": "*"
+  }
+}
