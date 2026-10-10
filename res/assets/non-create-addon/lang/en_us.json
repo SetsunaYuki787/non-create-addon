@@ -1,5 +1,6 @@
 {
   "block.non-create-addon.redstone_pulse": "Redstone Pulse",
   "effect.non-create-addon.animation_speed": "Animation Speed",
-  "item.non-create-addon.andesite_plug": "Andesite Plug"
+  "item.non-create-addon.andesite_plug": "Andesite Plug",
+  "itemGroup.non-create-addon.main": "Non Create Addon"
 }

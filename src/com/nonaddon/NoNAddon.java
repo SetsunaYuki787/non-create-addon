@@ -58,7 +58,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * <p>Feature 5 is the andesite plug: {@link AndesitePlug} registers the wearable and {@link
  * PlugGoggles} teaches Trinkets about it and makes wearing it count as wearing Create's engineer
  * goggles. Trinkets is optional - the item exists and crafts without it, only the goggles hook
- * needs it.
+ * needs it. {@link AddonItemGroup} lists the plug in the addon's own creative tab, without which
+ * it would be invisible to both the creative inventory and creative search.
  */
 public final class NoNAddon implements ModInitializer {
     public static final String MOD_ID = "non-create-addon";
@@ -119,6 +120,7 @@ public final class NoNAddon implements ModInitializer {
         NonAnimationEvents.STAGE_CHANGED.register(NoNAddon::onAnimationStageChanged);
         CardboardArmorSpeed.register();
         AndesitePlug.register();
+        AddonItemGroup.register();
         if (FabricLoader.getInstance().isModLoaded("trinkets")) {
             try {
                 PlugGoggles.register();
